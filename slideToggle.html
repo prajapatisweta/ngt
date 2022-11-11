@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="jquery.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".toggle-btn").click(function () {
+          $("p").slideToggle();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button type="button" class="toggle-btn">Slide Toggle Paragraphs</button>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+  </body>
+</html>

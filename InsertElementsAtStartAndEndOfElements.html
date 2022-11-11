@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".b1").click(function () {
+          $("p").prepend("<strong>Note:</strong> ");
+        });
+        $(".b2").click(function () {
+          $("#container").append("This is demo text.");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button class="b1">Insert Text at Begin</button>
+    <p>welcome in Jquery</p>
+    <button class="b2">Insert Text at End</button>
+    <div id="container">
+      <p>Mulund College of Commerce</p>
+    </div>
+  </body>
+</html>

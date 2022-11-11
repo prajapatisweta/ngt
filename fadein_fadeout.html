@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="jquery.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".btn1").click(function () {
+          $("p").fadeOut();
+        });
+
+        $(".btn2").click(function () {
+          $("p").fadeIn();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p>SIES college of arts science and commerce</p>
+
+    <button class="btn1">Fade out</button>
+    <button class="btn2">Fade in</button>
+  </body>
+</html>

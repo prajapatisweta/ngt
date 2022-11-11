@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="jquery.js"></script>
+    <style>
+      img {
+        position: relative; /* Required to move element */
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("img").animate({ left: 300 });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button>Start Animation</button><br />
+    <img src="jquery.png" alt="jQuery" height="270px" width="240px" />
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".b1").click(function () {
+          var str = $("img#jquery").attr("alt");
+          alert(str);
+        });
+        $(".b2").click(function () {
+          $('input[type="checkbox"]').attr("checked", "checked");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button class="b1">Get Link's HREF Attribute</button>
+    <img
+      id="jquery"
+      src="jquery.png"
+      alt="jquery"
+      height="290px"
+      width="250px"
+    /><br /><br />
+    <p><input type="checkbox" />I agree with terms and conditions.</p>
+    <button class="b2">Check</button>
+  </body>
+</html>

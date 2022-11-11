@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".b1").click(function () {
+          $(".box").slideToggle(500);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button type="button" class="b1">Slide Toggle</button>
+    <hr />
+    <div class="box">
+      <div class="box-inner">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem
+        tempor, varius quam at, luctus dui.
+      </div>
+    </div>
+  </body>
+</html>

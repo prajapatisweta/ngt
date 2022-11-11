@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".b1").click(function () {
+          var str = $("p").html();
+          alert(str);
+        });
+        $(".b2").click(function () {
+          $("body").html("<p>Hello World!</p>");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button class="b1">Get Paragraph's HTML Contents</button>
+    <p>The quick <b>brown fox</b> jumps over the lazy dog.</p>
+    <button class="b2">Write Message</button>
+  </body>
+</html>

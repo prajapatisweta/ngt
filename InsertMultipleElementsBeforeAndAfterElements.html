@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".b1").click(function () {
+          var newHeading = "<h1>Important Note:</h1>";
+          var newParagraph = document.createElement("p");
+          newParagraph.innerHTML = "<em>Lorem Ipsum is dummy text...</em>";
+          $("p").before(newHeading, newParagraph);
+        });
+        $(".b2").click(function () {
+          var newHeading = "<h1>Important Note:</h1>";
+          var newParagraph = document.createElement("p");
+          newParagraph.innerHTML = "<em>Lorem Ipsum is dummy text...</em>";
+          $("body").append(newHeading, newParagraph);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button class="b1">Insert Contents Begin</button>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <button class="b2">Insert Contents End</button>
+  </body>
+</html>

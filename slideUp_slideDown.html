@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".up-btn").click(function () {
+          $("p").slideUp();
+        });
+        $(".down-btn").click(function () {
+          $("p").slideDown();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button type="button" class="up-btn">Slide Up Paragraphs</button>
+    <button type="button" class="down-btn">Slide Down Paragraphs</button>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+  </body>
+</html>

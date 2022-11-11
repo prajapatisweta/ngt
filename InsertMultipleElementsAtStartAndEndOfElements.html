@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".b1").click(function () {
+          var newHeading = "<h1>Important Note:</h1>";
+          var newParagraph = document.createElement("p");
+          newParagraph.innerHTML = "<em>hello world</em>";
+          $("body").append(newHeading, newParagraph);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button class="b1">Insert Contents</button>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </body>
+</html>

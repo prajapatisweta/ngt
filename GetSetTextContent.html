@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title></title>
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".b1").click(function () {
+          var str = $("p").text();
+          alert(str);
+        });
+        $(".b2").click(function () {
+          $("p").text("This is demo text.");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button class="b1">Get All Paragraph's Text</button>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <button class="b2">Set All Paragraph's Text</button>
+    <p>This is a test paragraph.</p>
+    <p>This is another test paragraph.</p>
+  </body>
+</html>

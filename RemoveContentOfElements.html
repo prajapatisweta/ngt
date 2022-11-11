@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".btn").click(function () {
+          $("div#demo").remove();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="demo">
+      <p>Inside Div Element</p>
+    </div>
+    <p>Outside Div element</p>
+    <button class="btn">Hide the elements inside div</button>
+  </body>
+</html>
